@@ -1,6 +1,16 @@
 const express = require('express');
 const morgan = require('morgan');
+const mysql = require('mysql');
 const app = express();
+
+// mysql
+// mysql://:95fbacbe@us-cdbr-east-05.cleardb.net/heroku_146ae20a624b8e1?reconnect=true
+const connection = mysql.createConnection({
+    host: 'heroku_146ae20a624b8e1',
+    user: 'b1d1f51bccf20d',
+    password: '95fbacbe',
+    database: 'us-cdbr-east-05.cleardb.net'
+});
 
 // swagger
 const path = require("path");
