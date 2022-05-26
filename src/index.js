@@ -47,8 +47,8 @@ app.use('/api/stats', require('./routes/stats'));
 app.use('/api-doc', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swaggerSpec)));
 
 // starting the server
-app.listen((process.env.PORT || 5000), function(){
-    console.log('listening on *:5000');
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   });
 /*app.listen(app.get('port'), () => {
     console.log(`Server on port ${app.get('port')}`);
