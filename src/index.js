@@ -47,7 +47,7 @@ app.use('/api/stats', require('./routes/stats'));
 app.use('/api-doc', swaggerUi.serve, swaggerUi.setup(swaggerJsDoc(swaggerSpec)));
 
 // starting the server
-http.listen((process.env.PORT || 5000), function(){
+app.listen((process.env.PORT || 5000), function(){
     console.log('listening on *:5000');
   });
 /*app.listen(app.get('port'), () => {
