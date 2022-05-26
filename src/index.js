@@ -25,7 +25,7 @@ const swaggerSpec = {
         },
         servers: [
             {
-                url: "http://pruebasmelinodejs.herokuapp.com"
+                url: "https://pruebasmelinodejs.herokuapp.com"
             }
         ]
     },
